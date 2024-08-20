@@ -11,29 +11,10 @@ namespace Fundamentos
     {
         public override void apresentarSe()
         {
-            Console.WriteLine("Olá, eu sou o " + this.Nome + " sou nível " + this.Nivel + ", tenho força " + this.Forca + ", minha agilidade é " + this.Agilidade + ", minha inteligência é" + this.Inteligencia + " e tenho " + this.Vida + " pontos de vida!");
+            Console.WriteLine("Olá, eu sou o mago " + this.Nome + "! Meu nível atual é " + this.Nivel + ", tenho força " + this.Forca + ", minha agilidade é " + this.Agilidade + ", minha inteligência é " + this.Inteligencia + " e tenho " + this.Vida + " pontos de vida!");
+            Console.WriteLine("==============================================");
+            Console.WriteLine();
         }
 
-        public override int atacar()
-        {
-            int pontosAtaque = 0;
-            pontosAtaque = (this.Inteligencia + this.Forca + this.Agilidade + this.Nivel + this.Vida) / 5;
-            return pontosAtaque;
-        }
-
-        public override void batalha()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void defender()
-        {
-
-        }
-
-        public override void evoluir()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

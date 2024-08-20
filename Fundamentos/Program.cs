@@ -149,6 +149,35 @@ internal class Program
         //Console.WriteLine("==============================================");
         //Console.WriteLine();
 
+        Mago merlin = new Mago();
+        merlin.Nome = "Malchor Voidweaver";
+        merlin.Vida = 100;
+        merlin.Inteligencia = 87;
+        merlin.Agilidade = 55;
+        merlin.Forca = 62;
+        merlin.Nivel = 1;
+
+        Elfo elfo = new Elfo();
+        elfo.Nome = "Aelara Moonwhisper";
+        elfo.Vida = 100;
+        elfo.Inteligencia = 83;
+        elfo.Agilidade = 60;
+        elfo.Forca = 90;
+        elfo.Nivel = 1;
+
+        merlin.apresentarSe();
+        elfo.apresentarSe();
+
+        merlin.batalhar(elfo);
+
+
+        //Elfo elfo = new Elfo();
+        //elfo.Nome = "Kadrik Ironblade";
+        //elfo.Vida = 100;
+        //elfo.Inteligencia = 83;
+        //elfo.Agilidade = 58;
+        //elfo.Forca = 90;
+        //elfo.Nivel = 1;
 
     }
 }
