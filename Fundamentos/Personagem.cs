@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 namespace Fundamentos
 {
-    public abstract class Personagem
+    public class Personagem
     {
+        //Atributos - características dos personagens
         public string Nome { get; set; }
-        public string Categoria { get; set; }
         public int Nivel { get; set; }
         public int Forca { get; set; }
         public int Agilidade { get; set; }
         public int Inteligencia { get; set; }
         public int Vida { get; set; }
+
+        //Métodos
+        public virtual void apresentarSe() { }
+        public virtual void evoluir() { }
+        public virtual int atacar() { }
+        public virtual void defender() { }
+        public virtual void batalha() { }
+
+
     }
 }
